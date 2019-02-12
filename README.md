@@ -1,6 +1,6 @@
 # willibald-sass
 
-Sass module for the Willibald theme.
+A Sass module for the Willibald theme.
 
 This module is used in following projects.
 
