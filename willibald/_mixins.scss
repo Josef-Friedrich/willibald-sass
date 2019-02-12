@@ -1,0 +1,72 @@
+// Custom mixins collection
+
+@mixin form-border {
+  border: 1px solid $grey;
+}
+
+@mixin form-item-hover {
+  &:hover {
+    background-color: $grey;
+    opacity: .7;
+    color: $white;
+  }
+}
+
+@mixin bold {
+  color: $dark-blue;
+  font-family: $font-heading;
+  font-weight: normal;
+}
+
+@mixin menu-height($count) {
+  height: 3.5 + (1.6 * $count) * 1em;
+}
+
+// Overrides susy container paddings for mobile views.
+@mixin mobile-container-padding {
+  @media (max-width: 30em) {
+    padding-left: .3em;
+    padding-right: .3em;
+  }
+}
+
+// element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// The word "Unpublished" displayed underneath unpublished nodes and comments.
+@mixin unpublished-div {
+  height: 0;
+  overflow: visible;
+  color: lighten($orange, 30%);
+  font-size: 3em;
+  line-height: 5em;
+  font-family: $font-heading;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; // A very nice CSS3 property
+}
