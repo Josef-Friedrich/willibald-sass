@@ -1,0 +1,87 @@
+// Font faces, stacks and sizes.
+$base-font-size:   16px; // The font size set on the root html element.
+$base-line-height: 26px; // This line-height determines the basic unit of vertical rhythm.
+
+$h1-font-size: 1.3 * $base-font-size;
+$h2-font-size: 1.2 * $base-font-size;
+$h3-font-size: 1.1 * $base-font-size;
+$h4-font-size: 1 * $base-font-size;
+$h5-font-size: 0.9 * $base-font-size;
+$h6-font-size: 0.8 * $base-font-size;
+
+// Fonts
+$willibald: 'Willibald Sans', sans-serif;
+$willibald-black: 'Willibald Sans Black', sans-serif;
+$courier:  "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+$base-font-family: $willibald;
+$font-body: $willibald;
+$font-heading: $willibald-black;
+$font-monospace: $courier;
+
+// Indentation
+$indent-amount: 2em;
+
+// Colors
+
+// Main colors
+
+// organe
+$light-orange: #d69046;
+$orange: #ef7d00;
+$orange-pale: #d67c1c;
+
+// Dark blue
+$dark-blue: #3d5874;
+$dark-blue-pale: #485873;
+
+// Light blue
+$light-blue: #58aeba;
+$light-blue-pale: #78adb8;
+
+// Green
+$green: #95c11f;
+$green-pale: #a2c037;
+
+// Other Colors
+
+// Blue grey
+$blue-grey: #8a95a7;
+$dark-blue-grey: #727b8a;
+
+// Grey
+$lighter-grey: #f8f8f8;
+$light-grey: #eee;
+$medium-grey: #bfbfbf;
+$grey: #8a95a7;
+$dark-grey: #727b8a;
+
+$white: #fff;
+
+// Red
+$light-red: #faf0f0;
+$red: #ef5c76;
+
+// Yellow
+$yellow: #f7ef6f;
+
+// Color order
+$color-default: $dark-grey;
+
+$color-1: $dark-blue;
+$color-2: $orange;
+$color-3: $green;
+$color-4: $light-blue;
+
+// Status colors
+$status: $green;
+$warning: $orange;
+$error: $red;
+
+$hover-opacity: .7;
+
+$tabs-line-height: 2.2em;
+
+$slim-border: 1px solid $grey;
+$fat-border: 3px solid $grey;
+
