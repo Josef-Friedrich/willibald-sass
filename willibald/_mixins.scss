@@ -4,6 +4,11 @@
   border: 1px solid $grey;
 }
 
+@mixin image-frame {
+  box-shadow: 3px 3px 10px 1px $grey;
+  border: 3px solid $white;
+}
+
 @mixin form-item-hover {
   &:hover {
     background-color: $grey;
